@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourist Spot Showcase - Pasuquin, Ilocos Norte</title>
+
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top hover trigger zone for navbar -->
+  <div class="nav-trigger"></div>
+
+  <!-- TOP NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="nav-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M3 9.5L12 3l9 6.5v11a1.5 1.5 0 0 1-1.5 1.5H4.5A1.5 1.5 0 0 1 3 20.5v-11z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span class="nav-label">Home</span>
+    </a>
+
+    <a href="#popular" class="nav-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2c-.5 2.5-2 4.5-4 6-2 1.5-3 3.5-3 6a7 7 0 0 0 14 0c0-2.5-1-4.5-3-6-2-1.5-3.5-3.5-4-6z"></path>
+      </svg>
+      <span class="nav-label">Popular</span>
+    </a>
+
+    <!-- Center logo (back to top) -->
+    <a href="#home" class="logo-circle">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Logo" />
+    </a>
+
+    <a href="#vlog" class="nav-item">
+      <svg viewBox="0 0 24 24">
+        <polygon points="23 7 16 12 23 17 23 7"></polygon>
+        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+      </svg>
+      <span class="nav-label">Vlog</span>
+    </a>
+
+    <a href="#about" class="nav-item">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <span class="nav-label">About</span>
+    </a>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- 1. HOME / HERO -->
+    <section id="home" class="section-block">
+      <div class="hero-image-box">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" alt="Tourist Spot Banner" />
+      </div>
+
+      <div class="description-box">
+        <h2>Explore Salpad Pasuquin Ilocos Norte</h2>
+        <p>
+          Welcome to Pasuquin! Experience crystal-clear waters, scenic coastal landscapes,
+          rich local culture, and unforgettable outdoor adventures.
+        </p>
+      </div>
+
+      <div class="button-group">
+        <a href="#popular" class="action-btn btn-primary">Top Attractions</a>
+        <a href="#about" class="action-btn btn-secondary">Travel Guide</a>
+      </div>
+    </section>
+
+    <!-- 2. POPULAR ATTRACTIONS (COMPLETE FLUSH FIT) -->
+    <section id="popular" class="section-block section-popular">
+      <div class="popular-header">
+        <h2 class="section-title">Popular Attractions</h2>
+        <p class="section-subtitle">Experience the finest destinations in Pasuquin, Ilocos Norte.</p>
+      </div>
+
+      <!-- Pure CSS Switch Radios -->
+      <input type="radio" name="attraction-switch" id="spot-tab-1" class="spot-radio" checked />
+      <input type="radio" name="attraction-switch" id="spot-tab-2" class="spot-radio" />
+      <input type="radio" name="attraction-switch" id="spot-tab-3" class="spot-radio" />
+
+      <!-- Outer Deck with Side Buttons -->
+      <div class="showcase-deck-wide">
+
+        <!-- === ATTRACTION 1 === -->
+        <div class="showcase-slide slide-1">
+          <!-- Left Outside Button -->
+          <label for="spot-tab-3" class="side-nav-btn side-btn-prev" title="Previous Spot">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+
+          <!-- Complete Fit Card -->
+          <article class="attraction-card-fit">
+            <!-- LEFT: FULL IMAGE (Grey in diagram) -->
+            <div class="fit-image-box">
+              <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80" alt="Dos Hermanos Islands" />
+              <span class="spot-pill">Spot 01 / 03</span>
+            </div>
+
+            <!-- RIGHT: CONTENT COLUMN -->
+            <div class="fit-content-column">
+              <!-- TOP: TITLE STRIP (Red in diagram) -->
+              <div class="fit-title-strip">
+                <h3>Dos Hermanos Islands</h3>
+                <span class="place-tag">📍 Coastal Pasuquin, Ilocos Norte</span>
+              </div>
+
+              <!-- BOTTOM: DESCRIPTION BOX (Yellow in diagram) -->
+              <div class="fit-desc-box">
+                <p>
+                  Experience the iconic twin limestone monoliths rising from the crystal-clear coastal waters of Pasuquin. Renowned for dramatic cliffside viewpoints, tidal sea pools, and breathtaking golden-hour sunsets, it is the premier photography and coastal sight of the municipality.
+                </p>
+
+                <div class="place-tags">
+                  <span class="tag-badge">🌊 Twin Rock Formations</span>
+                  <span class="tag-badge">📸 Sunset View Deck</span>
+                  <span class="tag-badge">🏖️ Tidal Sea Pools</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right Outside Button -->
+          <label for="spot-tab-2" class="side-nav-btn side-btn-next" title="Next Spot">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+
+        <!-- === ATTRACTION 2 === -->
+        <div class="showcase-slide slide-2">
+          <!-- Left Outside Button -->
+          <label for="spot-tab-1" class="side-nav-btn side-btn-prev" title="Previous Spot">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+
+          <!-- Complete Fit Card -->
+          <article class="attraction-card-fit">
+            <div class="fit-image-box">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Salpad Waterfalls" />
+              <span class="spot-pill">Spot 02 / 03</span>
+            </div>
+
+            <div class="fit-content-column">
+              <div class="fit-title-strip">
+                <h3>Salpad Waterfalls & River Trek</h3>
+                <span class="place-tag">📍 Brgy. Salpad, Pasuquin</span>
+              </div>
+
+              <div class="fit-desc-box">
+                <p>
+                  A hidden paradise nestled into lush mountain trails and bamboo canopies. Cool off in refreshing natural freshwater springs, hike along gentle riverside boulder paths, or enjoy traditional open-air bamboo picnic cottages with panoramic mountain horizons.
+                </p>
+
+                <div class="place-tags">
+                  <span class="tag-badge">🏊 Cold Natural Spring</span>
+                  <span class="tag-badge">🌿 Riverside Eco Trail</span>
+                  <span class="tag-badge">🧺 Forest Cottages</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right Outside Button -->
+          <label for="spot-tab-3" class="side-nav-btn side-btn-next" title="Next Spot">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+
+        <!-- === ATTRACTION 3 === -->
+        <div class="showcase-slide slide-3">
+          <!-- Left Outside Button -->
+          <label for="spot-tab-2" class="side-nav-btn side-btn-prev" title="Previous Spot">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+
+          <!-- Complete Fit Card -->
+          <article class="attraction-card-fit">
+            <div class="fit-image-box">
+              <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80" alt="Pasuquin White Coast" />
+              <span class="spot-pill">Spot 03 / 03</span>
+            </div>
+
+            <div class="fit-content-column">
+              <div class="fit-title-strip">
+                <h3>Pasuquin White Sand Beach & Dunes</h3>
+                <span class="place-tag">📍 Poblacion Coastline, Pasuquin</span>
+              </div>
+
+              <div class="fit-desc-box">
+                <p>
+                  Unwind along expansive coastal shorelines where rolling sand dunes meet clear turquoise waves. Famous for fresh local sea-salt harvesting, scenic coastal breeze, and peaceful strolls undisturbed by heavy tourist crowds.
+                </p>
+
+                <div class="place-tags">
+                  <span class="tag-badge">🏖️ Peaceful Shoreline</span>
+                  <span class="tag-badge">🧂 Local Salt Making</span>
+                  <span class="tag-badge">🌅 Morning Strolls</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right Outside Button -->
+          <label for="spot-tab-1" class="side-nav-btn side-btn-next" title="Next Spot">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. VLOG -->
+    <section id="vlog" class="section-block">
+      <h2 class="section-title">Virtual Tour & Vlog</h2>
+      <p class="section-subtitle">Watch scenic drone footage and video tours of the destination.</p>
+
+      <div class="vlog-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/ScMzIvxBSi4"
+          title="Travel Vlog"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- 4. TRAVELER'S GUIDE -->
+    <section id="about" class="section-block">
+      <h2 class="section-title">Traveler's Guide</h2>
+      <p class="section-subtitle">Essential tips for tourists planning their trip.</p>
+
+      <div class="guide-box">
+        <div class="guide-item">
+          <h4>📍 Location & How to Get There</h4>
+          <p>Accessible via Laoag International Airport, followed by a scenic 30-minute northbound drive along the scenic Ilocos highway.</p>
+        </div>
+
+        <div class="guide-item">
+          <h4>☀️ Best Time to Visit</h4>
+          <p>November through May for sunny beach weather, tranquil seas, and clear mountain trekking trails.</p>
+        </div>
+
+        <div class="guide-item">
+          <h4>🎟️ Entrance Fees & Permits</h4>
+          <p>Free beach access. Eco-tourism environmental registration fee of ₱20-₱50 applies at selected protected waterfalls.</p>
+        </div>
+
+        <div class="guide-item">
+          <h4>📞 Tourism Office Contact</h4>
+          <p>Pasuquin Municipal Tourism Assistance: tourism@pasuquin.gov.ph | +63 (077) 123-4567.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
